@@ -16,16 +16,16 @@ Resources:
       SecurityGroupIds: 
         - !Ref MySecGrp
       UserData: 
-        Fn::Base64: !Sub |
+        Fn:: !Base64 |
           #! /bin/bash
-          sudo dnf update -y 
-          sudo dnf install python3 -y
-          sudo pip3 install flask
-          sudo dnf install pip -y
+          dnf update -y 
+          dnf install python3 -y
+          pip3 install flask
+          dnf install pip -y
           wget https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/roman-numerals-converter-app.py 
           wget -p templates https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/templates/index.html
           wget -p templates https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/templates/result.html
-          sudo python3 roman-numerals-converter-app.py
+          python3 roman-numerals-converter-app.py
       Tags: 
         - Key: Name 
           Value: !Sub Seyma ${AWS::StackName} Stack
