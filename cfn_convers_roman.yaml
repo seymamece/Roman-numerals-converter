@@ -19,7 +19,7 @@ Resources:
           #! /bin/bash
           dnf update -y 
           dnf install python3-pip -y
-          pip3 install flask
+          pip3 install Flask
           dnf install git -y 
           cd /home/ec2-user
           wget https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/roman-numerals-converter-app.py 
@@ -39,6 +39,10 @@ Resources:
         - IpProtocol: tcp
           FromPort: 22
           ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
           CidrIp: 0.0.0.0/0
       Tags:
         - Value: env
