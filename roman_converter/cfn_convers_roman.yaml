@@ -21,7 +21,6 @@ Resources:
           dnf update -y 
           dnf install python3 -y
           pip3 install flask
-          cd /home/ec2-user
           wget https://raw.githubusercontent.com/seymamece/Romen_Converter/main/roman-numerals-converter-app.py 
           wget -p templates https://raw.githubusercontent.com/seymamece/Romen_Converter/main/templates/index.html
           wget -p templates https://raw.githubusercontent.com/seymamece/Romen_Converter/main/templates/result.html
