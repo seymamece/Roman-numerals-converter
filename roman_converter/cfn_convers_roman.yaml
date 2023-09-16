@@ -21,9 +21,9 @@ Resources:
           dnf update -y 
           dnf install python3 -y
           pip3 install flask
-          wget https://raw.githubusercontent.com/seymamece/Romen_Converter/main/roman-numerals-converter-app.py 
-          wget -p templates https://raw.githubusercontent.com/seymamece/Romen_Converter/main/templates/index.html
-          wget -p templates https://raw.githubusercontent.com/seymamece/Romen_Converter/main/templates/result.html
+          wget https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/roman-numerals-converter-app.py 
+          wget -p templates https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/templates/index.html
+          wget -p templates https://raw.githubusercontent.com/seymamece/Roman-numerals-converter/main/roman_converter/templates/result.html
           python3 roman-numerals-converter-app.py
       Tags: 
         - Key: Name 
