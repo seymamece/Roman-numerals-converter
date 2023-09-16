@@ -16,7 +16,7 @@ Resources:
       SecurityGroupIds: 
         - !Ref MySecGrp
       UserData: 
-        Fn:: !Base64 |
+        Fn::Base64: !Sub |
           #! /bin/bash
           sudo dnf update -y 
           sudo dnf install python3 -y
