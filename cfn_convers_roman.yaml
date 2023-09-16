@@ -15,8 +15,7 @@ Resources:
       KeyName: !Ref KeyName
       SecurityGroupIds: 
         - !Ref MySecGrp
-      UserData: 
-        Fn:: !Base64 |
+      UserData: !Base64 |
           #! /bin/bash
           dnf update -y 
           dnf install python3 -y
