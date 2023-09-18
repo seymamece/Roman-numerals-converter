@@ -21,6 +21,7 @@ Resources:
       UserData: !Base64 |
           #! /bin/bash
           dnf update -y 
+          dnf install python3 -y
           dnf install python3-pip -y
           pip3 install Flask
           dnf install git -y 
