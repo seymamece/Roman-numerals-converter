@@ -32,7 +32,7 @@ Resources:
           python3 app.py
       Tags: 
         - Key: Name 
-          Value: !Sub Seyma ${AWS::StackName} Stack
+          Value: !Sub Web Server of ${AWS::StackName} Stack
   MySecGrp:
     Type: AWS::EC2::SecurityGroup
     Properties:
